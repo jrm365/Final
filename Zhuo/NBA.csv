@@ -1,0 +1,442 @@
+Player,PayRnk,pay,college,team,pos,age,games,point,ThrP,ThrPA,eFG,FreeThrow,rebound,assist
+Stephen Curry,1,34682550,University of Kentucky,GSW,PG,29,51,28.2,4.2,9.8,0.618,0.921,5.1,6.1
+LeBron James,2,33285709,University of Notre Dame,CLE,PF,33,82,28.6,1.8,5,0.59,0.731,8.6,9.1
+Paul Millsap,3,31269231,North Carolina State University,DEN,PF,32,38,17,1,3,0.509,0.696,6.4,2.8
+Gordon Hayward,4,29727900,University of Kentucky,BOS,SF,27,1,7.3,0,1,0.5,0,1,0
+Blake Griffin,5,29512900,Marquette University,DET,PF,28,58,19.6,1.9,5.6,0.493,0.785,7.4,5.8
+Kyle Lowry,6,28703704,University of Kansas,TOR,PG,31,78,19.5,3.1,7.6,0.553,0.854,5.6,6.9
+Russell Westbrook,7,28530608,Temple University,OKC,PG,29,80,24.7,1.2,4.1,0.477,0.737,10.1,10.3
+Mike Conley,8,28530608,Muhlenberg College,MEM,PG,30,12,15.4,2,6.4,0.452,0.803,2.3,4.1
+James Harden,9,28299399,University of Denver,HOU,SG,28,72,29.8,3.7,10,0.541,0.858,5.4,8.8
+DeMar DeRozan,10,27739975,Western Michigan University,TOR,SG,28,80,21,1.1,3.6,0.488,0.825,3.9,5.2
+Al Horford,11,27734405,St. John's University,BOS,C,31,72,17.6,1.3,3.1,0.553,0.783,7.4,4.7
+Carmelo Anthony,12,26243760,Oklahoma State University,OKC,PF,33,78,12.7,2.2,6.1,0.476,0.767,5.8,1.3
+Damian Lillard,13,26153057,Michigan State University,POR,PG,27,73,25.2,3.1,8.6,0.519,0.916,4.5,6.6
+Jrue Holiday,14,25686667,Colgate University,NOP,SG,27,81,17.8,1.5,4.4,0.543,0.786,4.5,6
+Kevin Durant,15,25000000,Louisiana State University,GSW,PF,29,68,26,2.5,6.1,0.586,0.889,6.8,5.4
+Otto Porter,16,24773250,West Texas A&M University,WAS,SF,24,77,18.3,1.8,4.1,0.581,0.828,6.4,2
+Chris Paul,17,24599495,Miami University,HOU,PG,32,58,24.4,2.5,6.5,0.55,0.919,5.4,7.9
+Bradley Beal,18,23775506,Georgetown University,WAS,SG,24,82,18.4,2.4,6.5,0.527,0.791,4.4,4.5
+Anthony Davis,19,23775506,Columbia University,NOP,PF,24,75,28.9,0.7,2.2,0.552,0.828,11.1,2.3
+Andre Drummond,20,23775506,University of Illinois at Urbana-Champaign,DET,C,24,78,22.9,0,0.1,0.529,0.605,16,3
+Hassan Whiteside,21,23775506,Seton Hall University,MIA,C,28,54,24.1,0,0,0.542,0.703,11.4,1
+Dwight Howard,22,23500000,City College of San Francisco,CHO,C,32,81,20.5,0,0.1,0.556,0.574,12.5,1.3
+Chandler Parsons,23,23112004,University of Minnesota,MEM,SF,29,36,13.6,1.4,3.4,0.571,0.63,2.5,1.9
+Harrison Barnes,24,23112004,East Texas State University,DAL,PF,25,77,15.8,1.5,4.3,0.494,0.827,6.1,2
+J.J. Redick,25,23000000,East Texas State University,PHI,SG,33,70,15.9,2.8,6.6,0.569,0.904,2.5,3
+Marc Gasol,26,22642350,Georgetown University,MEM,C,33,73,17.4,1.5,4.4,0.473,0.834,8.1,4.2
+Kevin Love,27,22642350,Louisiana State University,CLE,C,29,59,22.4,2.3,5.6,0.552,0.88,9.3,1.7
+Brook Lopez,28,22642350,Canisius College,LAL,C,29,74,16.4,1.5,4.4,0.536,0.703,4,1.7
+DeAndre Jordan,29,22642350,Rice University,LAC,C,29,77,20.2,0,0,0.645,0.58,15.2,1.5
+Steven Adams,30,22471910,University of Wisconsin,OKC,C,24,76,20.6,0,0,0.629,0.559,9,1.2
+Giannis Antetokounmpo,31,22471910,University of Louisville,MIL,PF,23,75,27.3,0.6,1.9,0.545,0.76,10,4.8
+Nicolas Batum,32,22434783,University of Wisconsin,CHO,SG,29,64,14.4,1.4,4.3,0.486,0.831,4.8,5.5
+Rudy Gobert,33,21974719,Georgetown University,UTA,C,25,56,20.7,0,0,0.622,0.682,10.7,1.4
+LaMarcus Aldridge,34,21461010,University of Wyoming,SAS,C,32,75,25,0.4,1.2,0.52,0.837,8.5,2
+Victor Oladipo,35,21000000,Western Michigan University,IND,SG,25,75,23.1,2.1,5.8,0.537,0.799,5.2,4.3
+Enes Kanter,36,20566802,University of Pennsylvania,NYK,C,25,71,24,0,0,0.592,0.848,11,1.5
+Danilo Gallinari,37,20559599,University of Notre Dame,LAC,SF,29,21,13.8,1.7,5.3,0.469,0.931,4.8,2
+Serge Ibaka,38,20061729,University of Denver,TOR,PF,28,76,14.7,1.4,3.9,0.552,0.797,6.3,0.8
+George Hill,39,20000000,Seton Hall University,CLE,PG,31,67,13.3,1.3,3.1,0.543,0.786,2.7,2.8
+Ryan Anderson,40,19578455,University of North Carolina,HOU,PF,29,66,12.6,2,5.1,0.568,0.774,5,0.9
+Paul George,41,19508958,Truman State University,OKC,SF,27,79,18.7,3.1,7.7,0.521,0.822,5.7,3.3
+Allen Crabbe,42,19332500,New York University,BRK,SG,25,75,12.3,2.7,7.1,0.529,0.852,4.3,1.6
+Jimmy Butler,43,19301070,University of Colorado,MIN,SG,28,59,23.7,1.2,3.4,0.512,0.854,5.3,4.9
+Jeff Teague,44,19000000,Muhlenberg College,MIN,PG,29,70,16.4,1.2,3.3,0.499,0.845,3,7
+Kawhi Leonard,45,18868625,College of William & Mary,SAS,SF,26,9,26,1.2,3.9,0.518,0.816,4.7,2.3
+Kyrie Irving,46,18868625,University of Illinois at Urbana-Champaign,BOS,PG,25,60,25,2.8,6.8,0.568,0.889,3.8,5.1
+John Wall,47,18063850,University of Wisconsin,WAS,PG,27,41,19.1,1.5,4.1,0.466,0.726,3.7,9.6
+DeMarcus Cousins,48,18063850,Butler University,NOP,C,27,48,22.6,2.2,6.1,0.53,0.746,12.9,5.4
+Greg Monroe,49,17884176,University of Rhode Island,PHO,C,27,51,21.2,0,0,0.565,0.739,6.9,2.2
+Wesley Matthews,50,17884176,Santa Clara University,DAL,SF,31,63,11.4,2.4,6.4,0.516,0.822,3.1,2.7
+Klay Thompson,51,17826150,University of Kentucky,GSW,SG,27,73,16.1,3.1,7.1,0.585,0.837,3.8,2.5
+Joakim Noah,52,17765000,University of Utah,NYK,C,32,7,15.6,0,0,0.5,0.5,2,0.6
+Kentavious Caldwell-Pope,53,17745894,New York University,LAL,SG,24,74,13.2,2.1,5.6,0.526,0.789,5.2,2.2
+Luol Deng,54,17190000,Murray State University,LAL,SF,32,1,5.5,0,0,0.5,0,0,1
+Evan Turner,55,17131148,Syracuse University,POR,SF,29,79,9.9,0.5,1.7,0.484,0.85,3.1,2.2
+Goran Dragic,56,17000450,DePaul University,MIA,PG,31,75,16.6,1.5,4,0.502,0.801,4.1,4.8
+Evan Fournier,57,17000000,Truman State University,ORL,SF,25,57,15.5,2.2,5.9,0.538,0.867,3.2,2.9
+Bismack Biyombo,58,17000000,University of Utah,ORL,C,25,82,14.1,0,0,0.52,0.65,5.7,0.8
+Kent Bazemore,59,16910113,Sam Houston State University,ATL,SG,28,65,14.5,1.7,4.2,0.5,0.796,3.8,3.5
+Robert Covington,60,16698103,Western Kentucky University,PHI,SF,27,80,12.9,2.5,6.9,0.534,0.853,5.4,2
+Ian Mahinmi,61,16661641,Creighton University,WAS,C,31,77,12.2,0,0,0.556,0.703,4.1,0.7
+Tim Hardaway,62,16500000,University of Washington,NYK,SG,25,57,14.4,2.3,7.2,0.496,0.816,3.9,2.7
+Draymond Green,63,16400000,Loyola Marymount University,GSW,PF,27,70,16.1,1.1,3.7,0.516,0.775,7.6,7.3
+Tristan Thompson,64,16400000,University of Notre Dame,CLE,C,26,53,13.6,0,0,0.562,0.544,6.6,0.6
+Reggie Jackson,65,16000000,Georgetown University,DET,PG,27,45,15.9,1.2,3.8,0.471,0.836,2.8,5.3
+Pau Gasol,66,16000000,University of Minnesota,SAS,C,37,77,18.9,0.6,1.6,0.492,0.756,8,3.1
+Tobias Harris,67,16000000,Ohio State University,LAC,PF,25,80,17.1,2.3,5.6,0.535,0.829,5.5,2.4
+Dwyane Wade,68,15550000,University of Kentucky,CHI,SG,36,67,15,0.5,1.7,0.462,0.714,3.8,3.4
+Dennis Schroder,69,15500000,Saint Joseph's University,ATL,PG,24,67,17.3,1.1,3.9,0.469,0.849,3.1,6.2
+Jonas Valanciunas,70,15460675,North Carolina State University,TOR,C,25,77,22.5,0.4,1,0.59,0.806,8.6,1.1
+Tony Parker,71,15453126,West Texas A&M University,SAS,PG,35,55,12.7,0.2,0.7,0.472,0.705,1.7,3.5
+Timofey Mozgov,72,15280000,Santa Clara University,BRK,C,31,31,12.3,0.1,0.6,0.581,0.767,3.2,0.4
+Andre Iguodala,73,14814815,Franklin College,GSW,SF,34,64,11.2,0.5,1.8,0.514,0.632,3.8,3.3
+DeMarre Carroll,74,14800000,University of Southern California,BRK,SF,31,73,14.3,2,5.4,0.506,0.764,6.6,2
+Thaddeus Young,75,14796348,University of Texas at Austin,IND,PF,29,81,14.8,0.7,2.2,0.521,0.598,6.3,1.9
+Eric Bledsoe,76,14500000,Oklahoma State University,MIL,PG,28,74,19.7,1.7,4.9,0.536,0.795,3.8,5
+Ricky Rubio,77,14275000,Oklahoma State University,UTA,PG,27,77,15.4,1.2,3.5,0.476,0.866,4.6,5.3
+Joe Ingles,78,14136364,University of Notre Dame,UTA,SF,30,82,14.4,2.5,5.7,0.609,0.795,4.2,4.8
+Gorgui Dieng,79,14112360,University of Tennessee,MIN,C,28,79,14.7,0.2,0.8,0.504,0.775,4.6,0.9
+Khris Middleton,80,14100000,Rice University,MIL,SF,26,82,17.4,1.8,5,0.524,0.884,5.2,4
+Mason Plumlee,81,14041096,Mount Union College,DEN,C,27,74,16.9,0,0,0.601,0.458,5.4,1.9
+Taj Gibson,82,14000000,University of Minnesota,MIN,PF,32,82,15.4,0.1,0.4,0.581,0.768,7.1,1.2
+James Johnson,83,13954000,City College of New York,MIA,PF,30,73,15.8,0.8,2.5,0.55,0.698,4.9,3.8
+Robin Lopez,84,13788500,Purdue University,CHI,C,29,64,14.7,0.1,0.2,0.533,0.756,4.5,1.9
+J.R. Smith,85,13760000,University of Kentucky,CLE,SG,32,80,8.5,1.8,4.8,0.524,0.696,2.9,1.8
+Marvin Williams,86,13168750,City College of New York,PHO,PF,31,78,13.9,1.6,3.9,0.57,0.829,4.7,1.2
+Tyson Chandler,87,13000000,Marshall University,CHO,C,35,46,14.2,0,0,0.647,0.624,9.1,1.2
+Michael Kidd-Gilchrist,88,13000000,Seton Hall University,PHO,SF,24,74,12.5,0,0,0.504,0.684,4.1,1
+Eric Gordon,89,12943020,University of Minnesota,CHO,SG,29,69,15.2,3.2,8.8,0.54,0.809,2.5,2.2
+Kenneth Faried,90,12921348,Washington & Jefferson College,HOU,PF,28,32,17.4,0,0,0.514,0.706,4.8,0.6
+Marcin Gortat,91,12782609,Bemidji State University,DEN,C,33,82,14.7,0,0,0.518,0.675,7.6,1.8
+Cody Zeller,92,12584270,Huntington University,WAS,C,25,33,15.9,0.1,0.1,0.551,0.718,5.4,0.9
+Miles Plumlee,93,12500000,Georgetown University,CHO,C,29,55,10.6,0,0,0.583,0.45,4.1,0.8
+Nikola Mirotic,94,12500000,University of Iowa,ATL,PF,26,55,18.7,2.5,6.5,0.546,0.818,7.4,1.5
+Zach Randolph,95,12307692,College of the Holy Cross,NOP,PF,36,59,17.3,0.9,2.5,0.507,0.785,6.7,2.2
+Nikola Vucevic,96,12250000,North Carolina State University,SAC,C,27,57,19.7,1.1,3.6,0.513,0.819,9.2,3.4
+Solomon Hill,97,12236535,Loyola University of Chicago,ORL,SF,26,12,4.8,0.3,1.8,0.317,0.5,3,1.8
+Wilson Chandler,98,12016854,Rice University,NOP,SF,30,74,11,1.2,3.3,0.515,0.772,5.4,2.1
+Jeremy Lin,99,12000000,University of Illinois at Urbana-Champaign,DEN,PG,29,1,15.9,1,2,0.458,1,0,4
+Kemba Walker,100,12000000,University of Notre Dame,BRK,PG,27,80,20.6,2.9,7.5,0.516,0.864,3.1,5.6
+Derrick Favors,101,12000000,Indiana State University,CHO,C,26,77,18.8,0.2,0.8,0.573,0.651,7.2,1.3
+Austin Rivers,102,11825000,University of Detroit Mercy,UTA,SG,25,61,12.6,2.2,5.9,0.508,0.642,2.4,4
+Courtney Lee,103,11747890,University of Wyoming,LAC,SG,32,76,13,1.5,3.7,0.529,0.919,2.9,2.4
+Jordan Clarkson,104,11562500,Bowling Green State University,NYK,SG,25,81,16.4,1.4,3.9,0.509,0.8,2.7,2.7
+John Henson,105,11422536,Saint Mary's College of California,MIN,C,27,76,15.7,0,0.1,0.573,0.57,6.8,1.5
+Dion Waiters,106,11000000,University of Wisconsin,CLE,SG,26,30,10.5,1.7,5.7,0.461,0.739,2.6,3.8
+Amir Johnson,107,11000000,Yale University,MIL,C,30,74,14.8,0.1,0.4,0.558,0.612,4.5,1.6
+Jamal Crawford,108,10942762,Dartmouth College,MIA,SG,37,80,13,1.3,3.9,0.485,0.903,1.2,2.3
+Alec Burks,109,10845506,St. John's University,PHI,SG,26,64,13.1,0.7,2.2,0.467,0.863,3,1
+Patty Mills,110,10714286,Eastern Kentucky University,ATL,PG,29,82,11.8,1.9,5,0.523,0.89,1.9,2.8
+Kelly Olynyk,111,10607169,University of Wyoming,UTA,PF,26,76,17.8,1.4,3.7,0.58,0.77,5.7,2.7
+Omer Asik,112,10595505,Indiana University,SAS,C,31,18,3.1,0,0,0.409,0.308,2.6,0.2
+Terrence Ross,113,10500000,New York University,MIA,SG,26,24,9.9,1.3,3.9,0.476,0.75,3,1.6
+Mirza Teletovic,114,10500000,Saint Louis University,CHI,PF,32,10,13.5,2.1,4.5,0.623,0,2.3,1
+Bojan Bogdanovic,115,10500000,Seton Hall University,ORL,SF,28,80,13.9,1.9,4.8,0.565,0.868,3.4,1.5
+Jon Leuer,116,10497319,Georgetown University,MIL,PF,28,8,8.9,0,0.4,0.417,0.867,4,0.6
+Iman Shumpert,117,10337079,Oregon State University,IND,SG,27,14,6.4,0.5,1.9,0.44,0.733,2.9,1.2
+Maurice Harkless,118,10162922,University of Texas at Austin,DET,SF,24,59,12.6,0.8,2,0.577,0.712,2.7,0.9
+Jared Dudley,119,10000000,Utah State University,SAC,PF,32,48,8.8,0.6,1.7,0.512,0.771,2,1.6
+Darren Collison,120,10000000,Michigan State University,POR,PG,30,69,18.8,1.4,3,0.571,0.882,2.6,5.3
+Danny Green,121,10000000,Seton Hall University,PHO,SG,30,70,11.4,1.7,4.6,0.49,0.769,3.6,1.6
+Meyers Leonard,122,9904495,St. John's University,IND,C,25,33,17.8,0.3,0.8,0.66,0.818,2.1,0.5
+Tony Snell,123,9821429,University of North Carolina,SAS,SG,26,75,8.5,1.4,3.6,0.562,0.792,1.9,1.3
+Al Jefferson,124,9769821,Xavier University,POR,C,33,36,20.2,0,0.1,0.534,0.833,4,0.8
+Matthew Dellavedova,125,9607500,University of Tennessee,MIL,PG,27,38,8.6,0.8,2.1,0.457,0.926,1.7,3.8
+Joe Johnson,126,9505000,University of Illinois at Urbana-Champaign,IND,SF,36,55,8.1,0.7,2.6,0.461,0.889,3.1,1.5
+Bogdan Bogdanovic,127,9470614,Georgetown University,MIL,SG,25,78,13.5,1.7,4.2,0.529,0.84,2.9,3.3
+Andre Roberson,128,9259259,DePaul University,SAC,SG,26,39,10.9,0.2,0.9,0.562,0.316,4.7,1.2
+Trevor Booker,129,9125000,DePaul University,SAC,PF,30,68,14.9,0.1,0.5,0.528,0.71,4.7,1.2
+Dwight Powell,130,9003125,Hamline University,OKC,C,26,79,18.8,0.4,1.1,0.626,0.719,5.6,1.2
+Jerryd Bayless,131,9000000,Western Illinois University,PHI,SG,29,39,7.5,1.4,3.7,0.519,0.795,2.1,1.4
+Avery Bradley,132,8808989,Sam Houston State University,DAL,SG,27,46,9.6,1.6,4.4,0.474,0.768,2.5,2
+JaMychal Green,133,8533333,Youngstown State University,PHI,PF,27,55,14,0.8,2.3,0.501,0.721,8.4,1.4
+E'Twaun Moore,134,8445024,Northwestern University,LAC,SG,28,82,12.1,1.6,3.7,0.585,0.706,2.9,2.3
+Rudy Gay,135,8406000,College of the Holy Cross,MEM,PF,31,57,18,0.6,2.1,0.506,0.772,5.1,1.3
+Kosta Koufos,136,8393000,Loyola University of Chicago,NOP,C,28,71,17.5,0,0,0.571,0.446,6.6,1.2
+Markieff Morris,137,8000000,University of Washington,SAS,PF,28,73,13.2,1,2.8,0.536,0.82,5.6,1.9
+Garrett Temple,138,8000000,University of Notre Dame,SAC,SG,31,65,10.2,1.4,3.5,0.512,0.769,2.3,1.9
+Vince Carter,139,8000000,University of Kentucky,WAS,SF,41,58,10.8,1,2.8,0.504,0.757,2.6,1.2
+C.J. Miles,140,7936509,Georgia Institute of Technology,SAC,SF,30,70,13,2.3,6.5,0.516,0.835,2.2,0.8
+Cristiano Felicio,141,7843500,Hamline University,SAC,C,25,55,12.5,0,0,0.591,0.667,4.2,1
+Shaun Livingston,142,7692308,University of Wyoming,TOR,PG,32,71,11.6,0,0.1,0.501,0.82,1.8,2
+Cory Joseph,143,7630000,Loyola University of Chicago,CHI,PG,26,82,11,0.8,2.3,0.479,0.745,3.2,3.2
+P.J. Tucker,144,7590035,College of the Holy Cross,GSW,PF,32,82,8.3,1.4,3.8,0.52,0.717,5.6,0.9
+Corey Brewer,145,7579366,Loyola College in Maryland,IND,SF-SG,31,72,11.2,0.4,1.5,0.498,0.722,2.1,0.9
+Andrew Wiggins,146,7574322,Santa Clara University,HOU,SF,22,82,13,1.4,4.1,0.481,0.643,4.4,2
+Darrell Arthur,147,7464912,Western Kentucky University,LAL,PF,29,19,8.4,0.4,1.2,0.553,0.667,0.8,0.5
+Channing Frye,148,7420912,Drake University,MIN,C,34,53,13.1,0.7,2.2,0.583,0.895,2.5,0.7
+Trevor Ariza,149,7420912,Beloit College,DEN,SF,32,67,11.8,2.5,6.9,0.542,0.854,4.4,1.6
+Al-Farouq Aminu,150,7319035,Bowling Green State University,LAL,PF,27,69,12,1.8,4.9,0.503,0.738,7.6,1.2
+Cole Aldrich,151,7300000,Bowling Green State University,HOU,C,29,21,6,0,0,0.333,0.333,0.7,0.1
+D.J. Augustin,152,7250000,Baylor University,POR,PG,30,75,15.4,1.5,3.6,0.557,0.868,2.1,3.8
+Markelle Fultz,153,7026240,Texas Wesleyan University,MIN,SG,19,14,12.4,0,0.1,0.405,0.476,3.1,3.8
+Lou Williams,154,7000000,University of Kentucky,ORL,SG,31,79,20.2,2.4,6.6,0.505,0.88,2.5,5.3
+Kyle Korver,155,7000000,Western Kentucky University,PHI,SG,36,73,13.4,2.2,5.2,0.628,0.889,2.3,1.2
+Jeremy Lamb,156,7000000,University of Illinois at Urbana-Champaign,LAC,SG,25,80,17,1.2,3.2,0.513,0.861,4.1,2.3
+Boban Marjanovic,157,7000000,Bowling Green State University,CLE,C,29,39,26,0,0,0.534,0.794,3.7,0.6
+Jae Crowder,158,6796117,Tulane University,CHO,SF,27,80,10.4,1.4,4.3,0.486,0.818,3.4,1.2
+Jabari Parker,159,6782392,Cornell University,LAC,PF,22,31,17.1,1,2.6,0.529,0.741,4.9,1.9
+Langston Galloway,160,6666667,DePaul University,UTA,SG,26,58,12.2,1.3,3.8,0.481,0.805,1.6,1
+Lance Thomas,161,6655325,University of Illinois at Urbana-Champaign,MIL,PF,29,73,6.3,0.7,1.7,0.476,0.83,2.4,0.6
+Ed Davis,162,6352531,Stanford University,DET,C,28,78,15.5,0,0,0.582,0.667,7.4,0.5
+Marco Belinelli,163,6306060,Drake University,NYK,SG,31,80,14.1,1.9,4.9,0.539,0.908,1.9,1.9
+Jonathon Simmons,164,6300000,Ohio State University,POR,SG,28,69,12.7,1,3,0.511,0.768,3.5,2.5
+Lonzo Ball,165,6286560,Georgetown University,ATL,PG,20,52,12.5,1.7,5.7,0.44,0.451,6.9,7.2
+Wayne Ellington,166,6270000,Georgetown University,ORL,SG,30,77,12.5,2.9,7.5,0.569,0.859,2.8,1
+Isaiah Thomas,167,6261395,Western Kentucky University,LAL,PG,28,32,12.6,1.7,5.9,0.438,0.893,2.1,4.8
+Karl-Anthony Towns,168,6216840,New York University,MIA,C,22,82,24.9,1.5,3.5,0.596,0.858,12.3,2.4
+Ben Simmons,169,6168840,Ohio State University,LAL,PG,21,81,20,0,0.1,0.545,0.56,8.1,8.2
+Joel Embiid,170,6100266,Eastern Kentucky University,MIN,C,23,63,22.9,1,3.4,0.514,0.769,11,3.2
+Josh McRoberts,171,6021175,University of Wyoming,PHI,PF,30,2,-12.5,0,0.5,0,0,0,0
+Ish Smith,172,6000000,Oregon State University,PHI,PG,29,82,15.4,0.4,1.2,0.507,0.698,2.7,4.4
+Alan Williams,173,6000000,University of Kentucky,MIL,PF,25,5,9.3,0,0,0.389,0.667,4.4,1.6
+Shelvin Mack,174,6000000,Indiana State University,DAL,PG,27,69,13.3,0.7,2,0.488,0.711,2.4,3.9
+Milos Teodosic,175,6000000,Temple University,DET,PG,30,45,11.6,2,5.2,0.542,0.848,2.8,4.6
+Ersan Ilyasova,176,6000000,Seton Hall University,PHO,PF,30,69,14.9,1.3,3.7,0.526,0.778,5.9,1.3
+Dewayne Dedmon,177,6000000,University of Wyoming,ORL,C,28,62,15.8,0.8,2.3,0.577,0.779,7.9,1.5
+Tyler Johnson,178,5881260,Seton Hall University,LAC,PG,25,72,13,1.7,4.5,0.518,0.822,3.4,2.3
+Wesley Johnson,179,5881260,Indiana University,ATL,SF,30,74,9.8,0.8,2.4,0.489,0.741,2.9,0.8
+Alex Abrines,180,5725000,Saint Louis University,ATL,SG,24,75,9,1.1,2.9,0.54,0.848,1.5,0.4
+Jayson Tatum,181,5645400,West Virginia University,MIA,SF,19,80,15.3,1.3,3,0.538,0.826,5,1.6
+D'Angelo Russell,182,5562360,New York University,LAC,PG,21,48,15.2,1.9,5.8,0.481,0.74,3.9,5.2
+Brandon Ingram,183,5519400,Valparaiso University,OKC,SF,20,59,13.8,0.7,1.8,0.497,0.681,5.3,3.9
+Patrick Beverley,184,5513514,Hamline University,BOS,SG,29,11,12.3,2.2,5.5,0.504,0.824,4.1,2.9
+Aaron Gordon,185,5504420,University of Wisconsin,BRK,PF,22,58,16.5,2,5.9,0.5,0.698,7.9,2.3
+Josh Smith,186,5400000,University of San Francisco,LAL,PF,32,3,3.5,0,0,0.25,0,1.3,0
+Thabo Sefolosha,187,5250000,Northern Arizona University,LAC,SF,33,38,15.8,0.8,2.2,0.558,0.815,4.2,0.9
+Jason Smith,188,5225000,University of Wisconsin,ORL,C,31,33,8.8,0.1,1,0.409,0.905,1.6,0.4
+Ben McLemore,189,5200000,Hamline University,BRK,SG,24,56,9.7,1,2.8,0.495,0.828,2.5,0.9
+Patrick Patterson,190,5192000,University of Southern California,DET,PF,28,82,10,0.8,2.1,0.523,0.87,2.4,0.7
+Nick Young,191,5192000,Saint Joseph's University,UTA,SG,32,80,10,1.5,4.1,0.538,0.862,1.6,0.5
+Brandan Wright,192,5179760,University of Toledo,WAS,PF,30,28,19,0,0,0.578,0.636,3.4,0.5
+Josh Jackson,193,5090040,University of Alabama,MEM,SF,20,77,11.8,0.7,2.8,0.448,0.634,4.6,1.5
+Marcus Morris,194,5000000,Kansas State University,OKC,PF,28,54,14.5,1.6,4.3,0.499,0.805,5.4,1.3
+Dirk Nowitzki,195,5000000,Catholic University of America,GSW,C,39,77,16.7,1.8,4.4,0.547,0.898,5.7,1.6
+Mike Muscala,196,5000000,Georgetown University,MEM,C,26,53,14.4,1.2,3.2,0.558,0.919,4.3,1
+Jahlil Okafor,197,4995120,Appalachian State University,PHO,C,22,28,15.3,0,0.1,0.562,0.724,3,0.4
+Dante Exum,198,4992385,University of Illinois at Urbana-Champaign,BOS,PG,22,14,16.7,0.4,1.3,0.511,0.806,1.9,3.1
+Jaylen Brown,199,4956480,University of Notre Dame,DAL,SG,21,70,13.6,1.7,4.4,0.54,0.644,4.9,1.6
+Jameer Nelson,200,4736050,Western Kentucky University,BOS,PG,35,50,8.1,0.8,2.5,0.473,0.8,2.1,3.6
+Kyle Singler,201,4666500,Villanova University,ATL,SF,29,12,5.9,0.2,0.4,0.381,0.538,0.8,0.2
+Justin Holiday,202,4615385,Georgetown University,BRK,SG,28,72,10.8,2.2,6.2,0.474,0.823,4,2.1
+De'Aaron Fox,203,4609200,DePaul University,UTA,PG,20,73,11.2,0.6,2.1,0.441,0.723,2.8,4.4
+Marcus Smart,204,4538020,University of Wyoming,NOP,SG,23,54,10.8,1.4,4.6,0.44,0.729,3.5,4.8
+Kristaps Porzingis,205,4503600,University of the Pacific,BOS,PF,22,48,20.4,1.9,4.8,0.489,0.793,6.6,1.2
+Dragan Bender,206,4468800,St. John's University,DEN,PF,20,82,7.1,1.4,3.9,0.508,0.765,4.4,1.6
+Devin Harris,207,4402546,Western Kentucky University,OKC,PG,34,71,13,1.1,3.2,0.499,0.835,1.8,2.1
+Ron Baker,208,4328000,DePaul University,CHI,SG,24,29,9.3,0.4,1.1,0.432,0.769,1,1.6
+Aron Baynes,209,4328000,Georgetown University,SAC,C,31,81,12.1,0,0.3,0.474,0.756,5.4,1.1
+Alex Len,210,4187599,University of Illinois at Urbana-Champaign,BOS,C,24,69,19.4,0,0,0.567,0.684,7.5,1.2
+Nerlens Noel,211,4187599,Colgate University,NYK,C,23,30,16.2,0,0,0.524,0.75,5.6,0.7
+Jonathan Isaac,212,4186320,University of Wyoming,PHO,PF,20,27,9.8,0.6,1.7,0.434,0.76,3.7,0.7
+Lance Stephenson,213,4180000,Georgetown University,DEN,SG,27,82,12.4,0.8,2.8,0.475,0.661,5.2,2.9
+Julius Randle,214,4149242,Saint Mary's University of Minnesota,NYK,C,23,82,19.9,0.1,0.5,0.563,0.718,8,2.6
+Kyle O'Quinn,215,4087500,University of Texas at Austin,MIN,C,27,77,20,0.1,0.2,0.589,0.772,6.1,2.1
+Mario Hezonja,216,4078320,Brigham Young University,BOS,SF,22,75,13.7,1.2,3.6,0.515,0.819,3.7,1.4
+Kris Dunn,217,4046760,University of Tennessee,PHO,PG,23,52,14.5,0.8,2.6,0.462,0.737,4.3,6
+Jonas Jerebko,218,4000000,Seton Hall University,DAL,PF,30,74,13.2,0.9,2.1,0.562,0.807,3.3,0.6
+Nemanja Bjelica,219,3949999,University of Iowa,ORL,PF,29,67,12.6,1.1,2.7,0.563,0.8,4.1,1.3
+J.J. Barea,220,3903900,Georgetown University,IND,PG,33,69,17.8,1.7,4.5,0.522,0.784,2.9,6.3
+Quincy Pondexter,221,3853931,Northern Illinois University,LAL,SF,29,23,4,0.1,1,0.316,0.824,1.2,0.4
+Lauri Markkanen,222,3821640,St. John's University,NYK,PF,20,68,15.6,2.1,5.9,0.518,0.843,7.5,1.2
+Nik Stauskas,223,3807146,nan,ORL,SG,24,41,9,1,2.4,0.519,0.724,1.6,1
+Willie Cauley-Stein,224,3704160,Villanova University,CHI,C,24,73,17.6,0,0.2,0.504,0.619,7,2.4
+Buddy Hield,225,3675480,West Virginia University,UTA,SG,24,80,16.1,2.2,5.1,0.54,0.877,3.8,1.9
+Will Barton,226,3533333,University of Arizona,MIN,SG,27,81,16.2,1.9,5.2,0.528,0.805,5,4.1
+Noah Vonleh,227,3505233,Temple University,DAL,PF,22,54,12.8,0.4,1.2,0.487,0.621,5.8,0.6
+Frank Ntilikina,228,3501120,University of Tennessee,CHI,PG,19,78,7,0.6,2,0.414,0.721,2.3,3.2
+Nene Hilario,229,3477600,St. John's University,CHI,C,35,52,16.4,0,0,0.569,0.636,3.4,0.9
+Zaza Pachulia,230,3477600,University of Toledo,BRK,C,33,69,17,0,0,0.564,0.806,4.7,1.6
+Troy Daniels,231,3408520,Xavier University of Louisiana,SAC,SG,26,79,9.8,2.3,5.8,0.563,0.875,1.6,0.6
+Emmanuel Mudiay,232,3381480,Duquesne University,SAC,PG,21,64,11.5,0.7,2.3,0.433,0.76,2.4,3.2
+Jamal Murray,233,3355320,College of the Holy Cross,DEN,PG,20,81,16.1,2,5.4,0.529,0.905,3.7,3.4
+Elfrid Payton,234,3332340,Clark Atlanta University,CHI,PG,23,63,16.5,0.5,1.5,0.516,0.649,4.3,6.2
+Rajon Rondo,235,3300000,Ohio State University,NYK,PG,31,65,15.3,0.8,2.3,0.518,0.543,4,8.2
+Doug McDermott,236,3294994,West Texas A&M University,HOU,SF,26,81,10.4,1.1,2.7,0.557,0.79,2.5,1
+Jodie Meeks,237,3290000,La Salle University,GSW,SG,30,77,12.4,0.9,2.7,0.491,0.863,1.6,0.9
+Tyreke Evans,238,3290000,Washington State University,PHO,PG,28,52,21.1,2.2,5.5,0.523,0.785,5.1,5.2
+Tarik Black,239,3290000,Hamline University,NYK,C,26,51,14.3,0,0.2,0.594,0.46,3.2,0.3
+Anthony Tolliver,240,3290000,Western Kentucky University,DEN,PF,32,79,13.9,2,4.6,0.632,0.797,3.1,1.1
+Dennis Smith,241,3218280,West Virginia State University,PHO,PG,20,69,12.8,1.5,4.9,0.446,0.694,3.8,5.2
+Zach LaVine,242,3202217,University of San Francisco,NOP,SG,22,24,14.6,1.8,5.1,0.442,0.813,3.9,3
+Ekpe Udoh,243,3200000,City College of New York,DAL,C,30,63,15.2,0,0,0.5,0.75,2.4,0.8
+T.J. Warren,244,3152931,University of San Francisco,WAS,SF,24,65,17.6,0.3,1.4,0.507,0.757,5.1,1.3
+Stanley Johnson,245,3097800,Eastern Kentucky University,MEM,SF,21,69,9,1,3.4,0.435,0.772,3.7,1.6
+Marquese Chriss,246,3073800,St. Bonaventure University,HOU,PF,20,72,11.1,0.8,2.6,0.482,0.608,5.5,1.2
+Zach Collins,247,3057240,Georgetown University,DET,C,20,66,7.5,0.5,1.7,0.458,0.643,3.3,0.8
+James Ennis,248,3028410,University of Notre Dame,DAL,SF,27,72,11.6,0.7,2.1,0.54,0.836,3.1,1
+Mindaugas Kuzminskas,249,3025035,University of Wisconsin,CHI,SF,28,1,-41.1,0,0,0,0,0,0
+Tomas Satoransky,250,3000000,Tulane University,UTA,SG,26,73,15.4,0.6,1.4,0.585,0.781,3.2,3.9
+Lucas Nogueira,251,2947305,"University of California, Los Angeles",PHO,C,25,49,17.3,0.1,0.4,0.644,0.679,1.8,0.4
+Jusuf Nurkic,252,2947305,Long Island University,DET,C,23,79,19.2,0,0.1,0.505,0.63,9,1.8
+Malik Monk,253,2904480,Ohio State University,PHO,SG,19,63,10.3,1.3,3.9,0.458,0.842,1,1.4
+Frank Kaminsky,254,2847600,University of Southern California,POR,PF,24,79,14.4,1.3,3.5,0.501,0.799,3.6,1.6
+Jakob Poeltl,255,2825640,"University of California, Los Angeles",DET,C,22,82,17.5,0,0,0.66,0.594,4.8,0.7
+Luke Kennard,256,2759280,Bradley University,DAL,SG,21,73,12.1,1.1,2.7,0.53,0.855,2.4,1.7
+Justise Winslow,257,2705040,Georgetown University,NYK,PF,21,68,11.5,0.7,1.9,0.474,0.635,5.4,2.2
+Michael Carter-Williams,258,2700000,Duquesne University,WAS,PG,26,52,10.8,0.3,1.1,0.362,0.82,2.7,2.2
+Thon Maker,259,2684160,University of Wisconsin-River Falls,CHI,C,20,74,10.2,0.4,1.4,0.46,0.699,3,0.6
+Cedi Osman,260,2642857,North Carolina State University,TOR,SF,22,61,11,0.5,1.4,0.57,0.565,2,0.7
+Donovan Mitchell,261,2621280,Northwestern University,POR,SG,21,79,16.7,2.4,7,0.506,0.805,3.7,3.7
+Myles Turner,262,2569920,University of Missouri,CHO,C,21,65,16.6,0.9,2.4,0.523,0.777,6.4,1.3
+Gary Harris,263,2550055,Kansas State University,CHO,SG,23,67,16.5,2.3,5.9,0.57,0.827,2.6,2.9
+Domantas Sabonis,264,2550000,Brigham Young University,POR,C,21,74,17.5,0.2,0.5,0.524,0.75,7.7,2
+Manu Ginobili,265,2500000,Ohio State University,TOR,SG,40,65,12.9,1,3,0.503,0.84,2.2,2.5
+Reggie Bullock,266,2500000,Syracuse University,DET,SF,26,62,13.6,2,4.5,0.603,0.796,2.5,1.5
+Richard Jefferson,267,2500000,University of Charleston,MIA,SF,37,20,6.4,0.1,0.4,0.481,0.571,0.9,0.8
+Malcolm Delaney,268,2500000,Northwestern State University,CHO,PG,28,54,10.6,0.9,2.3,0.463,0.804,1.9,3
+Bam Adebayo,269,2490360,St. John's University,MIL,C,20,69,15.7,0,0.1,0.512,0.721,5.5,1.5
+Bruno Caboclo,270,2451225,"University of California, Los Angeles",CLE,SF,22,12,7.7,0.3,1.4,0.339,0.833,1.8,0.3
+Trey Lyles,271,2441400,Butler University,UTA,PF,22,73,17.9,1.1,3,0.566,0.706,4.8,1.2
+Dario Saric,272,2422560,University of Illinois at Urbana-Champaign,IND,PF,23,78,15.8,2,5.1,0.541,0.86,6.7,2.6
+Taurean Waller-Prince,273,2422560,Tulane University,DEN,SF,23,82,12.8,2.1,5.6,0.516,0.844,4.7,2.6
+Rodney Hood,274,2386864,University of Wyoming,IND,SG,25,60,14.3,2.1,5.6,0.513,0.86,2.8,1.6
+Justin Jackson,275,2365560,Northwestern University,SAS,SF,22,68,9.2,0.8,2.7,0.51,0.722,2.8,1.1
+Shabazz Napier,276,2361360,North Carolina State University,DET,PG,26,74,14.2,1.1,2.9,0.497,0.841,2.3,2
+Clint Capela,277,2334520,Drake University,ATL,C,23,74,24.5,0,0,0.652,0.56,10.8,0.9
+Arron Afflalo,278,2328652,LeMoyne College,ATL,SG,32,53,5.8,0.5,1.3,0.485,0.846,1.2,0.6
+Raymond Felton,279,2328652,Bowling Green State University,MIA,PG,33,82,13,1,2.8,0.479,0.818,1.9,2.5
+Nick Collison,280,2328652,Niagara University,SAC,PF,37,15,13.2,0,0,0.684,0.385,1.3,0.3
+Ramon Sessions,281,2328652,University of Minnesota,OKC,PG,31,28,11.2,0.3,0.9,0.393,0.772,1.4,2.8
+Jarrett Jack,282,2328652,University of South Carolina,DEN,PG,34,62,11.5,0.4,1.4,0.455,0.84,3.1,5.6
+Jason Terry,283,2328652,Indiana University,PHI,SG,40,51,8.1,0.8,2.3,0.513,0.889,0.9,1.2
+Udonis Haslem,284,2328652,West Virginia State University,ATL,C,37,14,1.8,0.1,0.6,0.233,0.5,0.7,0.4
+David West,285,2328652,Eastern Kentucky University,CLE,C,37,73,20.9,0,0.1,0.575,0.759,3.3,1.9
+Jose Calderon,286,2328652,New York University,SAC,PG,36,57,11.3,0.8,1.7,0.624,0.8,1.5,2.1
+Andrew Bogut,287,2328652,New York University,POR,C,33,23,10.9,0,0,0.68,1,3.4,0.7
+Devin Booker,288,2319360,Washington State University,HOU,SG,21,54,18.1,2.7,7.1,0.501,0.878,4.5,4.7
+Georgios Papagiannis,289,2301360,Oklahoma State University,ORL,C,20,17,12.2,0,0,0.429,0,2.2,0.5
+Dante Cunningham,290,2300000,Lawrence Technological University,OKC,SF,30,73,10,0.8,2.3,0.53,0.596,4.1,0.7
+Justin Patton,291,2247480,St. John's University,OKC,C,20,1,19.8,0,0,0.5,0,0,0
+Guerschon Yabusele,292,2247480,Duke University,NYK,PF,22,33,12.3,0.4,1.1,0.525,0.682,1.6,0.5
+Cameron Payne,293,2203440,Loyola University of Chicago,NYK,PG,23,25,14,1.4,3.6,0.486,0.75,2.8,4.5
+Denzel Valentine,294,2186400,University of California,MIL,SG,24,77,12.1,1.9,4.8,0.517,0.745,5.1,3.2
+Kyle Anderson,295,2151704,University of Cincinnati,MIA,SF,24,74,15.9,0.3,0.8,0.549,0.712,5.4,2.7
+D.J. Wilson,296,2135040,University of Louisville,MIA,PF,21,22,10.3,0.1,0.2,0.625,0.5,0.5,0.1
+Derrick Rose,297,2116955,Brown University,GSW,PG,29,25,11.5,0.3,1.2,0.454,0.87,1.4,1.5
+Marreese Speights,298,2116955,Canisius College,DEN,C,30,52,13.7,1.7,4.5,0.519,0.727,2.6,0.8
+Michael Beasley,299,2116955,University of Pennsylvania,CLE,PF,29,74,17.8,0.5,1.2,0.528,0.78,5.6,1.7
+Aaron Brooks,300,2116955,Marshall University,LAL,PG,33,32,9.8,0.3,1,0.486,0.727,0.5,0.6
+Luc Mbah a Moute,301,2116955,Texas Christian University,PHO,PF,31,61,10.2,1,2.8,0.572,0.684,3,0.9
+JaVale McGee,302,2116955,St. John's University,SAC,C,30,65,22.3,0,0.1,0.621,0.731,2.6,0.5
+Jeff Green,303,2116955,University of Dayton,BRK,PF,31,78,14.8,0.7,2.2,0.52,0.868,3.2,1.3
+Tony Allen,304,2116955,Syracuse University,DET,SF,36,22,8.7,0.2,0.5,0.505,0.524,2.1,0.4
+Damien Wilkins,305,2116955,Temple University,MIN,SF,38,19,4.9,0.2,0.9,0.385,0.75,0.8,0.5
+Omri Casspi,306,2106470,Villanova University,BOS,SF,29,53,15.5,0.2,0.4,0.604,0.725,3.8,1
+Mario Chalmers,307,2106407,University of Louisville,IND,PG,31,66,10.4,0.8,2.9,0.439,0.855,2.4,3
+Darius Miller,308,2100000,Colorado State University,CHI,SF,27,82,9.3,1.8,4.4,0.594,0.866,2,1.4
+Kelly Oubre,309,2093040,University of California,CHI,SF,22,81,11.9,1.6,4.6,0.482,0.82,4.5,1.2
+Juan Hernangomez,310,2076840,East Central University,NOP,PF,22,25,9.7,0.6,2,0.48,0.833,2.2,0.5
+T.J. Leaf,311,2028360,Whitworth,SAS,PF,20,53,10.7,0.3,0.8,0.537,0.625,1.5,0.2
+Tim Frazier,312,2000000,New Mexico State University,MIL,PG,27,59,11.3,0.3,0.9,0.445,0.767,1.9,3.3
+Terry Rozier,313,1988520,University of Wyoming,SAC,PG,23,80,15.1,1.9,5,0.491,0.772,4.7,2.9
+Luke Babbitt,314,1974159,Villanova University,UTA,SF,28,50,9.8,1.2,3.1,0.563,0.773,1.9,0.6
+John Collins,315,1936920,Western Kentucky University,ORL,PF,20,74,18.3,0.2,0.6,0.591,0.715,7.3,1.3
+Rashad Vaughn,316,1889040,Long Island University,NYK,SG,21,28,9.3,0.5,1.3,0.536,0.667,0.8,0.5
+Wade Baldwin,317,1874400,West Virginia University,MIN,PG,21,7,16.6,0.6,0.7,0.762,0.6,1.1,0.7
+Sam Dekker,318,1794600,St. John's University,HOU,PF,23,73,11.5,0.1,0.8,0.514,0.661,2.4,0.5
+Terrance Ferguson,319,1785000,Long Island University,GSW,SG,19,61,7.4,0.7,2,0.533,0.9,0.8,0.3
+Henry Ellenson,320,1780800,Alliance College,CLE,PF,21,38,10.5,0.5,1.6,0.432,0.862,2.1,0.5
+Eric Moreland,321,1739333,Kansas State University,CHI,PF,26,67,13.9,0,0,0.541,0.379,4.1,1.2
+Jerian Grant,322,1713840,University of Pennsylvania,IND,PG,25,74,14.3,0.8,2.5,0.476,0.745,2.3,4.6
+Jarrett Allen,323,1713720,University of Illinois at Urbana-Champaign,GSW,C,19,72,17.5,0.1,0.2,0.596,0.776,5.4,0.7
+Mike Scott,324,1709538,Georgetown University,MEM,PF,29,76,13.7,0.9,2.1,0.59,0.658,3.3,1.1
+Tyler Zeller,325,1709538,Texas A&M University,NOP,C,28,66,16,0.2,0.4,0.575,0.722,4.6,0.7
+Quincy Acy,326,1709538,DePaul University,WAS,PF,27,70,8.2,1.5,4.2,0.496,0.817,3.7,0.8
+Malik Beasley,327,1700640,Loyola University of Chicago,DEN,SG,21,62,9,0.5,1.3,0.489,0.667,1.1,0.5
+Delon Wright,328,1645200,Long Island University,IND,PG,25,69,16.5,0.8,2.2,0.53,0.829,2.9,2.9
+OG Anunoby,329,1645200,Hamline University,WAS,SF,20,74,10,1,2.7,0.577,0.629,2.5,0.7
+Ante Zizic,330,1645200,La Salle University,SAC,C,21,32,24.2,0,0,0.731,0.724,1.9,0.2
+Caris LeVert,331,1632480,DePaul University,BOS,SF,23,71,14.3,1.2,3.5,0.493,0.711,3.7,4.2
+Justin Anderson,332,1579440,La Salle University,MIA,SF,24,38,13,0.9,2.7,0.515,0.737,2.4,0.7
+Tyler Lydon,333,1579440,Long Island University,ATL,PF,21,1,0,0,0,0,0,0,0
+Jeff Withey,334,1577320,University of Washington,POR,C,27,9,8.3,0.2,1.1,0.438,0.5,1.1,0
+Ian Clark,335,1577230,St. Bonaventure University,NOP,SG,26,74,9.4,0.8,2.6,0.511,0.763,1.7,1.5
+Shabazz Muhammad,336,1577230,Kansas State University,SAS,SF-SG,25,43,15.4,0.2,0.6,0.465,0.78,1.8,0.3
+Willie Reed,337,1577230,University of Kansas,MEM,C,27,42,19.2,0,0,0.674,0.582,2.9,0.2
+DeAndre Liggins,338,1577230,St. Francis College,MIL,SG,29,58,6,0.3,0.9,0.467,0.4,1.3,0.8
+DeAndre' Bembry,339,1567200,Columbia University,SAC,SF,23,26,7.6,0.4,1.2,0.457,0.576,2.8,1.9
+Joffrey Lauvergne,340,1524305,Wofford College,LAC,C,26,55,16.5,0,0.1,0.516,0.638,3.1,0.7
+Jerami Grant,341,1524305,Texas Tech University,OKC,PF,23,81,16.2,0.4,1.4,0.57,0.675,3.9,0.7
+Johnny O'Bryant,342,1524305,University of Oregon,DET,PF,24,36,11.9,0.4,1.2,0.439,0.84,2.6,0.4
+Tyler Ennis,343,1524305,DePaul University,DET,PG,23,54,11.1,0.3,1,0.451,0.759,1.8,1.9
+Julyan Stone,344,1524305,Centenary College of Louisiana,CHI,SG,29,23,7.6,0.3,0.6,0.692,0.5,1.3,1.1
+Sean Kilpatrick,345,1524305,Syracuse University,BRK,SG,28,52,11.6,0.9,2.8,0.452,0.889,1.7,0.9
+Joe Harris,346,1524305,Long Island University,WAS,SG,26,78,13.3,1.9,4.6,0.612,0.827,3.3,1.6
+Spencer Dinwiddie,347,1524305,Harvard University,MIL,PG,24,80,15.9,1.8,5.4,0.471,0.813,3.2,6.6
+Shane Larkin,348,1524305,Niagara University,BRK,PG,25,54,10.4,0.6,1.6,0.454,0.865,1.7,1.8
+Glenn Robinson,349,1524305,University of Illinois at Urbana-Champaign,DEN,SF,24,23,10.8,0.6,1.5,0.506,0.818,1.6,0.7
+Bobby Brown,350,1524305,University of Detroit Mercy,ATL,PG,33,20,5.5,0.6,2,0.422,0.5,0.4,0.6
+Bobby Portis,351,1516320,Long Island University,TOR,PF,22,73,19.7,1.1,3.1,0.52,0.769,6.8,1.7
+Malachi Richardson,352,1504560,Georgetown University,TOR,SG,22,26,5.9,0.5,1.5,0.4,0.773,1.3,0.5
+Norman Powell,353,1471382,Stanford University,CLE,SG,24,70,8.5,0.8,2.7,0.472,0.821,1.7,1.3
+Josh Richardson,354,1471382,Missouri State University,BRK,SF,24,81,13.6,1.6,4.1,0.523,0.845,3.5,2.9
+Rondae Hollis-Jefferson,355,1471382,Villanova University,PHI,SF,23,68,16.9,0.2,0.8,0.481,0.788,6.8,2.5
+Tyus Jones,356,1471382,Bradley University,DEN,PG,21,82,14.1,0.5,1.6,0.526,0.877,1.6,2.8
+Jarell Martin,357,1471382,Fordham University,DAL,PF,23,73,10.5,0.5,1.3,0.48,0.767,4.4,1
+Larry Nance,358,1471382,Utah State University,NOP,C,25,66,20.2,0,0.2,0.584,0.664,6.8,1.2
+Troy Williams,359,1471382,Niagara University,MIN,SF,23,21,15.1,0.5,1.8,0.518,0.667,3,0.8
+Chris McCullough,360,1471382,King's College,CHI,PF,22,19,15.8,0.1,0.4,0.44,0.643,1.3,0.2
+Raul Neto,361,1471382,St. Bonaventure University,MIL,PG,25,41,11.9,0.5,1.1,0.52,0.743,1.2,1.8
+Pat Connaughton,362,1471382,Indiana University,ATL,SG,25,82,9.3,0.9,2.6,0.518,0.841,2,1.1
+Richaun Holmes,363,1471382,University of Dayton,SAS,C,24,48,17.4,0.1,0.6,0.568,0.661,4.4,1.3
+T.J. McConnell,364,1471382,Canisius College,OKC,PG,25,76,12.5,0.4,0.8,0.531,0.795,3,4
+Josh Huestis,365,1471382,University of Minnesota,NYK,PF,26,69,5.4,0.5,1.7,0.42,0.3,2.3,0.3
+Jordan Mickey,366,1471382,Princeton University,LAL,PF,23,23,10.6,0.1,0.7,0.488,0.684,3.5,0.4
+Montrezl Harrell,367,1471382,University of Illinois at Urbana-Champaign,CHO,C,24,76,24.7,0,0.1,0.636,0.626,4,1
+Joe Young,368,1471382,Western Kentucky University,BRK,PG,25,53,10.1,0.5,1.2,0.497,0.759,1.2,0.7
+Kevon Looney,369,1471382,Georgetown University,BRK,C,21,66,14.8,0,0.1,0.583,0.545,3.3,0.6
+Nikola Jokic,370,1471382,St. John's University,BRK,C,22,75,24.4,1.5,3.7,0.554,0.85,10.7,6.1
+Salah Mejri,371,1471382,Western Kentucky University,BOS,C,31,61,17.8,0,0,0.642,0.576,4,0.6
+Caleb Swanigan,372,1465920,University of Toledo,IND,PF,20,27,7.5,0,0.3,0.408,0.667,2,0.5
+Furkan Korkmaz,373,1465920,University of Maryland Eastern Shore,HOU,SG,20,14,3.4,0.4,1.2,0.375,0.5,0.8,0.3
+Willy Hernangomez,374,1435750,Purdue University,CHI,C,23,48,21.2,0.1,0.3,0.57,0.656,3.8,0.7
+Kyle Kuzma,375,1423560,La Salle University,TOR,PF,22,77,14.2,2.1,5.6,0.527,0.707,6.3,1.8
+Tony Bradley,376,1414920,University of Idaho,SAC,C,20,9,9.5,0,0.1,0.273,1,1.2,0.1
+Derrick White,377,1404600,New York University,TOR,PG,23,17,15.9,0.5,0.8,0.606,0.7,1.5,0.5
+Josh Hart,378,1394520,College of the Holy Cross,MIA,SG,22,63,12.2,1.2,3.1,0.573,0.702,4.2,1.3
+Timothe Luwawu-Cabarrot,379,1386600,Louisiana State University,BRK,SF,22,52,7,1,3,0.474,0.793,1.4,1
+Brice Johnson,380,1331160,University of Kentucky,MIN,PF,23,18,18.2,0,0.1,0.476,0.6,1.7,0.1
+Pascal Siakam,381,1312611,University of Notre Dame,MEM,PF,23,81,14.5,0.4,1.6,0.537,0.621,4.5,2
+Dejounte Murray,382,1312611,Furman University,CLE,PG,21,81,15.1,0.1,0.4,0.451,0.709,5.7,2.9
+Skal Labissiere,383,1312611,University of Maryland,HOU,PF,21,60,14.3,0.3,0.9,0.467,0.805,4.8,1.2
+Deyonta Davis,384,1312611,Western Kentucky University,WAS,C,21,62,16.6,0,0,0.608,0.667,4,0.6
+Chinanu Onuaku,385,1312611,Duquesne University,UTA,C,21,1,-3.2,0,0,0.4,0,4,1
+Damian Jones,386,1312611,Western Kentucky University,POR,C,22,15,6.8,0,0,0.5,0.6,0.9,0.1
+Wayne Selden,387,1312611,University of Kentucky,PHI,SG,23,35,11.8,1.4,3.5,0.522,0.746,1.6,1.9
+Cheick Diallo,388,1312611,University of Kentucky,PHI,PF,21,52,17,0,0,0.58,0.758,4.1,0.4
+Joel Bolomboy,389,1312611,Pennsylvania State University,OKC,PF,24,6,11.7,0,0.2,0.5,0.5,1.7,0
+Davis Bertans,390,1312611,Indiana State University,MIA,PF,25,77,14.1,1.2,3.3,0.568,0.816,2,1
+Bryn Forbes,391,1312611,Valparaiso University,LAC,SG,24,80,9.1,1.1,2.9,0.51,0.667,1.4,1
+Jake Layman,392,1312611,Fordham University,IND,SF,23,35,4.9,0.1,0.6,0.34,0.667,0.5,0.3
+Tyler Ulis,393,1312611,St. John's University,GSW,PG,22,71,10.1,0.6,2.1,0.426,0.832,1.8,4.4
+Marcus Georges-Hunt,394,1312611,George Washington University,DEN,SG,23,42,6.9,0.1,0.4,0.479,0.619,0.4,0.2
+Malcolm Brogdon,395,1312611,Seton Hall University,DAL,PG,25,48,14.3,1.3,3.4,0.547,0.882,3.3,3.2
+Rodney McGruder,396,1312611,DePaul University,POR,SG,26,18,12,0.8,1.9,0.596,0.5,1.8,0.9
+Andrew Harrison,397,1312611,Michigan State University,PHI,PG,23,56,12.7,0.8,2.5,0.477,0.78,2.3,3.2
+Ivica Zubac,398,1312611,Niagara University,CHO,C,20,43,15.3,0,0,0.5,0.765,2.9,0.6
+Patrick McCaw,399,1312611,University of Minnesota,LAL,SG,22,57,7.4,0.3,1.4,0.451,0.765,1.4,1.4
+Dorian Finney-Smith,400,1312611,La Salle University,UTA,PF,24,21,7.6,1,3.2,0.463,0.733,3.6,1.2
+Yogi Ferrell,401,1312611,University of Dayton,SAS,SG,24,82,11.4,1.6,4.4,0.518,0.796,3,2.5
+Treveon Graham,402,1312611,Wake Forest University,LAL,SG,24,63,9,0.6,1.5,0.525,0.695,1.9,0.9
+David Nwaba,403,1312611,Villanova University,PHI,SG,25,70,12.2,0.3,0.7,0.499,0.655,4.7,1.5
+Paul Zipser,404,1312611,University of Dayton,MIN,SF,23,54,5.2,0.7,2,0.425,0.76,2.4,0.9
+Isaiah Whitehead,405,1312611,University of Oregon,MEM,PG,22,16,11.5,0.4,1.1,0.506,0.684,1.6,1.3
+Okaro White,406,1312611,University of Minnesota,TOR,PF,25,6,8.9,0.7,1.8,0.563,0.667,1.8,0.3
+Nicolas Brussino,407,1312611,University of Louisville,SAS,SF,24,4,-4.6,0,0.5,0,0,0.8,0
+Isaiah Taylor,408,1312611,University of Missouri,SAC,PG,23,67,10.9,0.3,1.2,0.444,0.702,1.4,3.1
+Kay Felder,409,1312611,Seton Hall University,MIA,PG,22,16,3.6,0.3,1.2,0.329,0.917,1.1,1.3
+Fred VanVleet,410,1312611,Duquesne University,MEM,PG,23,76,15.9,1.4,3.4,0.525,0.832,2.4,3.2
+Derrick Jones,411,1312611,Iona College,HOU,SF,20,20,10.1,0.2,0.9,0.425,0.667,1.9,0.5
+Semi Ojeleye,412,1291892,Villanova University,GSW,PF,23,73,4.6,0.5,1.7,0.452,0.61,2.2,0.3
+Frank Mason,413,1184385,Santa Clara University,MEM,PG,23,52,13,0.6,1.7,0.42,0.817,2.5,2.8
+Abdel Nader,414,1167333,University of Notre Dame,NOP,SF,24,48,5.1,0.5,1.4,0.413,0.59,1.5,0.5
+Damyean Dotson,415,1100000,Saint Francis University,UTA,SG,23,44,11.6,0.5,1.5,0.516,0.696,1.9,0.7
+Isaiah Canaan,416,1069308,University of Cincinnati,SAS,PG-SG,26,20,13.5,1.1,3.3,0.46,0.902,2.3,3.8
+Wesley Iwundu,417,1050000,Florida Agricultural and Mechanical University,SAS,SF,23,62,7.8,0.1,0.7,0.447,0.723,2.2,0.9
+Ivan Rabb,418,950000,Western Kentucky University,POR,PF,20,36,16.6,0,0,0.566,0.806,4.4,0.9
+Ike Anigbogu,419,950000,Michigan State University,PHO,C,19,11,21.6,0,0,0.444,0.833,0.8,0
+Gerald Green,420,947248,"California State University, Los Angeles",MIN,SG,32,41,14.1,2.7,7.3,0.54,0.85,3.2,0.6
+Jordan Bell,421,815615,University of Utah,MIL,C,23,57,18,0,0.1,0.627,0.682,3.6,1.8
+Dakari Johnson,422,815615,Bowling Green State University,MIA,C,22,31,16.4,0,0,0.564,0.55,1.1,0.3
+Sterling Brown,423,815615,University of Kentucky,MEM,SG,22,54,9.1,0.6,1.7,0.478,0.875,2.6,0.5
+Dillon Brooks,424,815615,Duquesne University,LAL,SF,22,82,9.8,1.1,3.2,0.501,0.747,3.1,1.6
+Jawun Evans,425,815615,Iona College,GSW,PG,21,48,7.2,0.3,1.1,0.381,0.776,1.8,2.1
+Sindarius Thornwell,426,815615,University of Kentucky,DAL,SG,23,73,8.2,0.3,0.8,0.479,0.67,1.9,0.9
+Dwayne Bacon,427,815615,College of the Holy Cross,DAL,SG,22,53,5.8,0.2,0.8,0.404,0.8,2.3,0.7
+Tyler Dorsey,428,815615,George Washington University,CHO,SG,21,56,10,1.3,3.6,0.471,0.714,2.3,1.4
+Davon Reed,429,815615,Grambling State University,CHI,SG,22,21,4.8,0.5,1.8,0.362,0.667,1.9,0.6
+Royce O'Neale,430,815615,Whitworth,CHI,SF,24,69,10.8,0.6,1.7,0.496,0.803,3.4,1.4
+Alfonzo McKinnie,431,815615,Temple University,BRK,SF,25,14,10.1,0.2,0.6,0.633,0.667,0.5,0.1
+Brandon Paul,432,815615,Indiana University,ATL,SG,26,64,7.5,0.2,0.8,0.492,0.512,1.1,0.6
+Khem Birch,433,815615,Canisius College,ATL,C,25,42,16.4,0,0,0.54,0.689,4.3,0.8
+Thomas Bryant,434,815615,"University of California, Los Angeles",ATL,C,20,15,9.9,0.1,0.7,0.405,0.556,1.1,0.4
+Zhou Qi,435,815615,University of Dayton,ATL,C,22,18,1.9,0.1,1.1,0.219,0.667,1.2,0.1
+Maxi Kleber,436,815615,Xavier University,ATL,PF,26,72,13.4,0.6,1.8,0.553,0.746,3.3,0.7
+Daniel Theis,437,815615,University of Toledo,CHI,C,25,63,16.1,0.3,0.9,0.579,0.753,4.3,0.9
+Trey Burke,438,784160,University of San Francisco,TOR,PG,25,36,21,1.1,2.9,0.552,0.649,2,4.7
+Alex Poythress,439,778668,North Carolina State University,TOR,PF,24,25,7.8,0.2,0.4,0.5,0,0.7,0.1
+Dwight Buycks,440,748160,DePaul University,LAL,PG,28,29,12.8,0.5,1.6,0.452,0.878,1.4,2
+Tyler Cavanaugh,441,679919,University of Missouri,ATL,PF,23,39,13,0.8,2.3,0.546,0.81,3.3,0.7
