@@ -1,0 +1,397 @@
+---
+title: "Final Project: Gun Violence in the United States from 2014-2017"
+author: "Leah Fawzi"
+date: "12/16/2018"
+output: pdf_document
+---
+
+**Overview:** My project centers around a csv file that I renamed "gun_violence.csv" that I obtained from Kaggle (https://www.kaggle.com/jameslko/gun-violence-data). The file contains data for all recorded gun violence incidents in the U.S. between January 2013 and March 2018. It is important to note that "gun violence incident" refers to any incident in which shots were fired within the United States, and does not necessarily mean anyone was injured or killed.
+
+It contains columns such as:
+- date (Date of crime)
+- state (State of crime)
+- city_or_county (City/County of crime)
+- n_killed (Number of people killed)
+- latitude (Location of the incident)
+- longitude (Location of the incident)
+- participant_age_group (Age group of participant(s) at the time crime)
+- incident_characteristics (Characteristics of the Incident)
+
+In the notes about the dataset, it states "The list of incidents from 2013 is not exhaustive; only 279 incidents from that year were catalogued." Additionally, because the data for 2018 is only until March, it is not complete. Thus, I remove 2013 and 2018's data from my data set so that my analysis is accurate.
+
+**Main Question:** How has the nature of gun violence in the United States changed from 2014 to 2017 and what factors, such as location, date, and motive, affect it? 
+
+In addressing the above question, I utilize the libraries listed below:
+```{r}
+library(lubridate, quietly=T)
+library(ggplot2, quietly=T)
+library(magrittr, quietly=T)
+library(dplyr, quietly=T)
+library(tidyr, quietly=T)
+library(ggplot2, quietly=T)
+library(maps, quietly=T)
+library(reshape, quietly=T)
+```
+
+**Cleaning the Data Set:** In cleaning the data set, I filter to exclude 2013 and 2018's data for reasons I mentioned earlier. Then I convert the date column to the more usable "year", "month", "day", and "weekday" columns using the lubridate package.
+
+```{r}
+df <- function(file){
+  df <- read.csv(file, header=T, stringsAsFactors = F)
+  df_filt <- df[year(df$date)=="2014"|year(df$date)=="2015"|year(df$date)=="2016"| year(df$date)=="2017",]
+  df_filt$year <- year(df_filt$date)
+  df_filt$month <- lubridate::month(df_filt$date, label=TRUE)
+  df_filt$day <- day(df_filt$date)
+  df_filt$weekday <- lubridate::wday(df_filt$date, label=TRUE)
+  return(df_filt)
+}
+
+print(head(df("gun_violence.csv")$year))
+print(head(df("gun_violence.csv")$month))
+print(head(df("gun_violence.csv")$day))
+print(head(df("gun_violence.csv")$weekday))
+```
+
+Note that the above calls of the function show the same value 6 times because there were clearly at least 6 gun violence incidents on January 1, 2014. Nevertheless, we have confirmed that this function has cleaned the data set.
+
+**General Analysis:**
+
+First, I write a function to generate a data frame and a barplot that show the number of gun violence incidents by year, from 2014-2017.
+```{r}
+shootings_per_year <- function(df){
+  df_years <- table(df$year) %>% as.data.frame
+  
+  years <- df_years$Var1
+  freq <- df_years$Freq
+  p <- ggplot(data=df_years, aes(x=years, y=freq)) 
+  p <- p + geom_bar(stat="identity") + xlab("Year") + ylab("Number of Gun Violence Incidents") 
+  p <- p + ggtitle("Number of Gun Violence Incidents in U.S. from 2014-2017") 
+  p <- p + theme(plot.title = element_text(hjust = 0.5)) + geom_text(aes(label=Freq)) + theme_bw()
+  print(p)
+
+  return(df_years)
+}
+
+print(shootings_per_year(df("gun_violence.csv")))
+
+```
+This shows that gun violence has been steadily increasing since 2014 and now is at a high of 61,401 incidents in 2017. 
+
+In addition to number of incidents, I want to analyze the change over time in the amount of gun violence incidents that result in death and in the amount of people killed due to gun violence. The distinction between the two is important: in the following function, I define the variable "deadly incidents" to be the amount of gun violence incidents that resulted in at least one death and the variable "total deaths" to be the number of deaths that have resulted from all gun violence incidents. I then plot how the two variables have changed throughout the years.
+
+```{r}
+killed_per_year <-function(df){
+  year <- unique(df$year)
+  deadly_incidents <- rep(NA, length(year))
+  total_deaths <- rep(NA, length(year))
+  for(i in 1:length(year)){
+    df_filt <- df[df$year==year[i],]
+    deadly_incidents[i] <- nrow(df_filt[df_filt$n_killed >0,])
+    total_deaths[i] <- sum(df_filt$n_killed)
+  }
+  
+  df_deaths <- data.frame(year=year, deadly_incidents=deadly_incidents, total_deaths=total_deaths, stringsAsFactors = F)
+  
+  #plotting the data
+  df_final <- melt(df_deaths, id.vars='year')
+  p <- ggplot(df_final, aes(year,value, fill=factor(variable))) + geom_bar(stat="identity",position="dodge") + ggtitle("Number of Deaths & Deadly Incidents from Gun Violence Incidents ") + theme(plot.title = element_text(hjust = 0.5)) + guides(fill=guide_legend(title="Legend")) + theme_bw()
+  print(p)
+  
+  return(df_deaths)
+}
+
+print(killed_per_year(df("gun_violence.csv")))
+```
+From the data frame and plot, we can see that the total number of deaths has increased since 2014. The total number of incidents resulting in death has also increased. This follows the overall trend of gun violence incidents increasing since 2014.
+
+**Location Analysis (State/City):**
+
+After observing some general trends regarding gun violence, I wanted to see how location impacted gun violence.
+
+First, I created a function to get the total number of gun violence incidents from 2014-2017 in each state and to plot a bar plot illustrating this.
+
+```{r}
+shootings_by_state <- function(df){
+  df_states <- table(df$state) %>% as.data.frame
+  df_states <- df_states[order(df_states$Freq, decreasing=TRUE),]
+  states <- factor(df_states$Var1, levels = df_states$Var1[order(df_states$Freq)])
+  freq <- df_states$Freq
+  p <- ggplot(data=df_states, aes(x=states, y=freq)) + geom_col() + coord_flip() 
+  p <- p + xlab("State") + ylab("Number of Gun Violence Incidents") 
+  p <- p + ggtitle("Number of Gun Violence Incidents by State")
+  p <- p + theme(plot.title = element_text(hjust = 0.5)) + theme_bw()
+  print(p)
+  
+  return(df_states)
+}
+
+print(shootings_by_state(df("gun_violence.csv")))
+```
+Here we see that Illinois, California, and Florida have the highest frequency of shootings from 2014-2017.
+
+Next, I created a function to get the total number of gun violence incidents from 2014-2017 for the 10 cities with the most incidents and to plot a bar plot illustrating this.
+
+```{r}
+shootings_by_city <- function(df){
+  df_city <- table(df$city_or_county) %>% as.data.frame
+  df_city <- df_city[order(df_city$Freq, decreasing=TRUE),]
+  df_city <- df_city[1:10,]
+  cities <- factor(df_city$Var1, levels = df_city$Var1[order(df_city$Freq)])
+  freq <- df_city$Freq
+  p <- ggplot(data=df_city, aes(x=cities, y=freq)) + geom_col() + coord_flip() + xlab("Cities") + ylab("Number of Gun Violence Incidents for Top 10 Cities") + ggtitle("Top 10 Cites with Most Gun Violence Incidents") +theme(plot.title = element_text(hjust = 0.5)) + theme_bw()
+  print(p)
+  
+  return(df_city)
+}
+
+print(shootings_by_city(df("gun_violence.csv")))
+```
+Clearly, Chicago stands out from the rest as the city with the most gun violence by far. Along with it are other major metropolitan cities that one would expect to have more crime on average.
+
+While it is interesting to analyze which places have the most quantity of gun violence, it is important to note that bigger states are naturally going to have more gun violence than small states because there are just more people present to commit these crimes. Also, analyzing the states without looking at the breakdown of the incidents over the years doesn't let us see how states have changed over time.
+
+To be able to see objectively which state has changed the most in terms of gun violence, I create a function to get the percent change from 2014 to 2017 of how many incidents have occured in each state.
+
+```{r}
+percent_change <- function(df){
+  state <- unique(df$state)
+  amt_2014 <- rep(NA, length(state))
+  amt_2017 <- rep(NA, length(state))
+  percent_change <- rep(NA, length(state))
+  
+  for(i in 1:length(state)){
+    df_filt <- df[df$state==state[i],]
+    amt_2014[i] <- nrow(df_filt[df_filt$year=="2014",])
+    amt_2017[i] <- nrow(df_filt[df_filt$year=="2017",])
+    percent_change[i] <- (amt_2017[i]-amt_2014[i])/amt_2014[i] *100
+    }
+  df_new <- data.frame(state=state,amt_2014=amt_2014, amt_2017=amt_2017, percent_change=percent_change,stringsAsFactors = F)
+  df_new <- df_new[order(df_new$percent_change, decreasing=TRUE),]
+  
+  states <- factor(df_new$state, levels = df_new$state[order(df_new$percent_change)])
+  change <- df_new$percent_change
+  p <- ggplot(data=df_new, aes(x=states, y=change)) + geom_col() + coord_flip() 
+  p <- p + xlab("State") + ylab("Percent Change (%)") 
+  p <- p + ggtitle("Percent Change of Number of Gun Violence Incidents by State") 
+  p <- p +theme(plot.title = element_text(hjust = 0.5)) + theme_bw()
+  print(p)
+  
+  return(df_new)
+}
+
+print(percent_change(df("gun_violence.csv")))
+```
+We see here that South Dakota and Alaska are the states that have increased the most percentage wise in gun violence, but it is important to note that they had pretty low amounts of gun violence to begin with in 2014 so it didn't take that many more incidents to go up as much as they did. It is also motivating to see that some states, such as Vermont, have decreased in incidents of gun violence over the past four years.
+
+Next, I will show visually where deaths from gun violence occur in the nation using the kmeans function.
+
+```{r}
+k_means <- function(df){
+df_filt<-na.omit(df[df$n_killed>0,])
+
+m <- dplyr::select(df_filt, longitude, latitude) %>% as.matrix
+km_out <- kmeans(m, centers=5)
+
+df_clustered <- data.frame(df_filt, cluster=factor(km_out$cluster))
+
+p <- ggplot()
+p <- p + geom_point(mapping=aes(x=longitude, y=latitude, color=cluster), data=df_clustered)
+print(p)
+
+}
+print(k_means(df("gun_violence.csv")))
+```
+This clearly shows an outline of the United States and specifically the east coast seems the most filled in, representing that it has the most deaths from gun violence.
+
+I also discovered the map_data function in the ggplot package that can better visually show where deaths from gun violence take place.
+
+```{r}
+map_shooting_deaths <- function(df){
+global <- map_data("state")
+p <- ggplot(global, aes(x = long, y = lat)) + geom_polygon(aes(group = group), fill = "white", col = "black") + coord_fixed(1.3, xlim = c(-130,-60), ylim = c(20,50)) +
+  geom_point(data = df, aes(x = longitude, y = latitude, col = n_killed), size = 0.001, alpha = .1) +  
+  theme_void() + 
+  theme(legend.position = "none")
+print(p)
+}
+
+print(map_shooting_deaths(df("gun_violence.csv")))
+```
+
+Now, to see the specific states in which deaths are common in gun violence, I create a function to determine the number of "deadly incidents" and "total deaths" per state and plot the total deaths per state.
+```{r}
+killed_per_state <-function(df){
+  df <- df[df$n_killed >0,]
+  state <- unique(df$state)
+  deadly_incidents <- rep(NA, length(state))
+  total_deaths <- rep(NA, length(state))
+  for(i in 1:length(state)){
+  df_filt <- df[df$state==state[i],]
+  deadly_incidents[i] <- nrow(df_filt)
+  total_deaths[i] <-sum(df_filt$n_killed)
+  }
+  df_new <- data.frame(state=state,deadly_incidents=deadly_incidents,totaL_deaths=total_deaths,stringsAsFactors = F)
+  df_new <- df_new[order(total_deaths, decreasing=TRUE),]
+  
+  states <- factor(state, levels = state[order(total_deaths)])
+  p <- ggplot(data=df_new, aes(x=states, y=total_deaths)) + geom_col() + coord_flip() + xlab("State") + ylab("Number of Deaths due to Gun Violence") + ggtitle("Number of Deaths due to Gun Violence in U.S. from 2014-2017 by State") +theme(plot.title = element_text(hjust = 0.5)) + theme_bw()
+  print(p)
+
+  return(df_new)
+}
+
+print(killed_per_state(df("gun_violence.csv")))
+```
+We can see that while Illinois was the top state for overall gun violence incidents, California is top for incidents resulting in death. This could tell us a variety of things, like that shootings in Illinois may not be very violent and could just result in injuries mostly.
+
+Next, I examine the percent, rather than just the amount, of shootings that resulted in death in each state and in the U.S. as a nation to compare states to the nationwide average. 
+```{r}
+murder_percent <- function(df){
+  state <- unique(df$state)
+  murders <- rep(NA, length(state))
+  shootings <- rep(NA, length(state))
+  percent <- rep(NA, length(state))
+  for(i in 1:length(state)){
+    df_filt <- df[df$state==state[i],]
+    murders[i] <- nrow(df_filt[df_filt$n_killed>0,])
+    shootings[i] <- nrow(df_filt)
+    percent[i] <- murders[i]/shootings[i] *100
+  }
+  df_new <- data.frame(state=state, percent_of_shootings = percent,fill=rep("no",51))
+  
+  #comparing with the nation in general
+  all_murders <- nrow(df[df$n_killed >0,])
+  all_shootings <- nrow(df)
+  all_percent <- all_murders/all_shootings * 100
+  df_usa <- data.frame(state="USA",percent_of_shootings=all_percent,fill="yes")
+  
+  #combine the states df and the nation df
+  df_final <- rbind(df_new,df_usa)
+  df_final <- df_final[order(df_final$percent_of_shootings, decreasing = TRUE),]
+  
+  states <- factor(df_final$state, levels = df_final$state[order(df_final$percent_of_shootings)])
+  percent <- df_final$percent_of_shootings
+  
+  p <- ggplot(data=df_final, aes(x=states, y=percent, fill=fill)) 
+  p <- p + geom_bar(stat="identity") + coord_flip() + xlab("State") 
+  p <- p + ylab("Percent of Gun Violence Incidents that Result in Death (%)") 
+  p <- p + ggtitle("Percent of Gun Violence Incidents that Result in Death in the U.S. from 2014-2017 by State") 
+  p <- p +theme(plot.title = element_text(hjust = 0.5)) + theme_bw()
+  print(p)
+  
+  return(df_final)
+}
+
+print(murder_percent(df("gun_violence.csv")))
+```
+In the U.S. in general, 22% of shootings result in death. Arizona comes at the top with 40% of their shootings resulting in death. At the opposite end of the spectrum, Rhode Island's shootings only result in death about 6% of the time.
+
+Finally, in examining gun violence by location, I make a function that allows me to get important stats about shooting in a particular city and state or just in a particular state.
+
+```{r}
+stats_by_place <- function(df, state, city){
+  if(city=="all"){
+  df_filt <- df[df$state==state,]
+  city <- "all"
+  }
+  else{
+  df_filt <- df[df$state==state & df$city==city,]
+  }
+  total_shootings <- nrow(df_filt)
+  shootings_2014 <- nrow(df_filt[df_filt$year=="2014",])
+  shootings_2015 <- nrow(df_filt[df_filt$year=="2015",])
+  shootings_2016 <- nrow(df_filt[df_filt$year=="2016",])
+  shootings_2017 <- nrow(df_filt[df_filt$year=="2017",])
+  percent_change <- (shootings_2017 - shootings_2014)/shootings_2014 * 100
+  total_deaths <- sum(df_filt$n_killed)
+  deadly_incidents <- nrow(df_filt[df_filt$n_killed>0,])
+  percent_deadly_incidents <- total_deaths/total_shootings * 100
+  city <- city
+  
+  df_new <- data.frame(state=state,city=city, total_shootings=total_shootings,shootings_2014=shootings_2014,shootings_2015=shootings_2015,shootings_2016=shootings_2016,shootings_2017=shootings_2017,percent_change_num_shootings = percent_change,total_deaths=total_deaths, deadly_incidents=deadly_incidents, percent_deadly_incidents=percent_deadly_incidents)
+  
+  return(df_new)
+}
+print(stats_by_place(df("gun_violence.csv"),"Illinois","Chicago"))
+print(stats_by_place(df("gun_violence.csv"),"Illinois","all"))
+```
+
+**Analysis by Time (Day of the Week & Month)**
+I will now do a brief analysis of the factor of time on gun violence in the U.S.
+
+First, I will analyze gun violence by the day of the week to see if there is a correlation.
+```{r}
+shootings_by_day <- function(df){
+  df_days <- table(df$weekday) %>% as.data.frame
+  day <- df_days$Var1
+  num_shootings <- df_days$Freq
+  p <- ggplot(data=df_days, aes(x=day, y=num_shootings)) + geom_bar(stat="identity") + xlab("Day of the Week") + ylab("Number of Gun Violence Incidents") + ggtitle("Number of Gun Violence Incidents in U.S. from 2014-2017 by Day") +theme(plot.title = element_text(hjust = 0.5)) + geom_text(aes(label=Freq)) + theme_bw()
+  print(p)
+  
+  return(df_days)
+}
+
+print(shootings_by_day(df("gun_violence.csv")))
+```
+Sunday has the most shootings followed by Saturday, which makes sense because people have less commitments and more time to get into trouble.
+
+Next, I will analyze gun violence by the month to see if there is a correlation.
+```{r}
+shootings_by_month <- function(df){
+  df_month <- table(df$month) %>% as.data.frame
+  df_month <- df_month[order(df_month$Freq, decreasing=TRUE),]
+  month <- df_month$Var1
+  num_shootings <- df_month$Freq
+  p <- ggplot(data=df_month, aes(x=month, y=num_shootings)) + geom_bar(stat="identity") + xlab("Month") + ylab("Number of Gun Violence Incidents") + ggtitle("Number of Gun Violence Incidents in U.S. from 2014-2017 by Month") +theme(plot.title = element_text(hjust = 0.5)) + geom_text(aes(label=Freq)) + theme_bw()
+  print(p)
+  
+  return(df_month)
+}
+print(shootings_by_month(df("gun_violence.csv")))
+```
+Shootings seem related to the warmer months- they are at an all time high in July and August, warm months, and low in February and March, the coldest months. This could be because people want to go outside and do things that could get you into trouble more during the summer and less during the winter.
+
+**Analysis by Characteristics of the Incident**
+Finally I will briefly look at some of the characteristics of shootings as possible factors.
+
+When examining the incident characteristics column of the data frame, I realized that the column described briefly what the shooting was about and Iwanted to look into three categories that popped up alot: "Gang involvement", "Drug involvement" and "Domestic Violence".
+
+```{r}
+reason_for_shooting <- function(df){
+  year <- unique(df$year)
+  gang_involvement <- rep(NA, length(year))
+  drug_involvement <- rep(NA, length(year))
+  domestic_violence <- rep(NA, length(year))
+  for(i in 1:length(year)){
+    df_filt <- df[df$year==year[i],]
+    gang_involvement[i] <- nrow(df_filt[grepl("Gang involvement",df_filt$incident_characteristics),])
+    drug_involvement[i] <- nrow(df_filt[grepl("Drug involvement",df_filt$incident_characteristics),])
+    domestic_violence[i] <- nrow(df_filt[grepl("Domestic Violence",df_filt$incident_characteristics),])
+  }
+  df_new <- data.frame(year=year,gang_involvement=gang_involvement, drug_involvement=drug_involvement, domestic_violence=domestic_violence)
+  return(df_new)
+}
+
+print(reason_for_shooting(df("gun_violence.csv")))
+```
+From this analysis, we can see that gang involvement shootings seem to be staying steady, drug involvement shootings have gone way up, and domestic violence shootings have also gone up. However, a lot of the time the people entering the data may not have known if a certain shooting was related to these three categories so this data could be skewed.
+
+Lastly, I want to see how many children/teens are involved in shootings (whether that be killed, injured,involved).
+
+```{r}
+kid_shootings <- function(df){
+  kids_in_shootings <- length(grep("Child 0-11",df$participant_age_group))
+  teens_in_shootings <- length(grep("Teen 12-17",df$participant_age_group))
+  df_new <- data.frame(kids_in_shootings=kids_in_shootings,teens_in_shootings=teens_in_shootings,stringsAsFactors = F)
+  
+return(df_new)
+}
+
+print(kid_shootings(df("gun_violence.csv")))
+```
+Luckily, not many kids were involved in shootings, but the number goes way up for teenagers because many probably got more involved in trouble and could actually be the suspect instead of just a young kid caught up in a shooting.
+
+**Big Takeaways:** 
+1. Gun violence incidents and the amount of deaths from gun violence have been steadily increasing in the United States from 2014 to 2017 on the average, and in the vast majority of states. 
+2. Gun violence is more likely to occur in certain states, such as Illinois and California, and is more likely to happen on the weekend and in warmer summer months. 
+
