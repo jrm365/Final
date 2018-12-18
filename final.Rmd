@@ -1,0 +1,76 @@
+---
+title: "WHO Suicide Statistics Final"
+author: "Jaquelin Martinez"
+date: "December 17, 2018"
+output: word_document
+---
+
+##Data
+The dataset used for this analysis is merged data from WHO suicide statistics (https://www.kaggle.com/szamil/who-suicide-statistics) and World Bank data that was accessed through R by a package (“WDI”). The WHO suicide statistics had data on raw number of suicides and population, divided into age groups and gender, for certain countries for 1987-2016. The WDI provided data on GDP per capita, PPP (constant 2011 international $), income level, and region for countries in 1992-2016. The final merged dataset contains only countries and year common to both dataset.
+
+My main question of exploration for merging the datasets is to see if there is a relationship between GDP per capita (PPP) and suicide rates (# suicides per 100,000 people in the population). I created the suicide rate to make the numbers comparable across age groups and countries with less population.
+
+I would also like to explore differeces in suicide rates between man and women and through the years in our data set. 
+
+
+```{r, cache=TRUE}
+source("final_processing.R")
+source("final_exploring.R")
+source("final_aggregate.R")
+source("final_regression.R")
+```
+
+
+
+```{r, cache=TRUE} 
+df <- merged_who_wdi()
+```
+
+
+What are the countries with the highest suicide rate (or the highest raw number of suicides) for each year in our dataset?
+```{r, cache=TRUE} 
+source("final_aggregate.R")
+
+top_rate_year(df)
+top_raw_year(df)
+
+```
+
+
+Given these results, some countries of interest are: Findland, Hungary, Russian Federation, Lithuania, United States, Thailand. 
+
+
+```{r, cache=TRUE} 
+graph_by_country(df, "Lithuania", 1996)
+graph_by_country(df, "Russian Federation", 1994)
+graph_by_country(df, "United States of America", 2015)
+graph_by_country(df, "Thailand", 2016)
+```
+These graphs show the great disparities in suicide rates between men and women. 
+
+```{r, cache=TRUE} 
+time_trend(df, "Lithuania")
+time_trend(df, "Hungary")
+time_trend(df, "Finland")
+time_trend(df, "United States of America") 
+time_trend(df, "Russian Federation") 
+time_trend(df, "Thailand") 
+```
+
+
+To check if there is a visible relationship, we can plot country-level suicide rates and GDP(PPP) data. 
+```{r, cache=TRUE} 
+plot_aggregate(df) 
+```
+
+There is no visible relationship, given this data, between GDP(PPP- constant 2011 int $) and suicide rates.  The plots are divided by decades. The 90s reflect a slightly positive relationship between GDP and suicide rates.
+
+We can verify that with a simple regression on GDP (PPP) on the suicide rate. 
+
+Our second regression model, a multivarate_regression, is much better model for creating a predicted suicide rate, as it adjusts for country, age group, gdp, and gender. Though the coefficients are not shown, we can see that the adjusted R-squared is: 0.5213. 
+. 
+
+```{r, cache=TRUE} 
+simple_regression(df)
+multivarate_regression(df)
+```
